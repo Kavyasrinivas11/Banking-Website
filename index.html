@@ -1,184 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
-
-    <!-- Flowbite -->
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Bank</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+html, body {
+  overflow-x: hidden;
+  font-family: "Playfair Display", serif;
+}
+.text-primary { color: #1e3a8a; }
+</style>
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<nav class="sticky bg-blue-100 shadow px-3 py-2 flex justify-between items-center mr-3 ml-3 rounded-xl z-50">
-
-  <!-- LEFT -->
-  <span class="flex items-center text-primary font-bold p-3 text-2xl md:text-4xl">
-    <img src="https://img.freepik.com/premium-psd/bank-icon-transparent-background_1046662-28747.jpg" 
-         class="h-10 w-10 md:h-12 md:w-12 mr-2">
-    My Bank
+<!-- Navbar -->
+<nav class="sticky bg-blue-100 shadow px-4 py-2 flex flex-wrap justify-between items-center mr-3 ml-3 rounded-xl z-50">
+  <span class="flex items-center text-2xl md:text-4xl text-primary font-bold p-2">
+    <img src="https://img.freepik.com/premium-psd/bank-icon-transparent-background_1046662-28747.jpg" class="h-8 md:h-12 w-8 md:w-12 mr-2"> My Bank
   </span>
-
-  <!-- RIGHT (COMPACT FIX) -->
-  <div class="flex items-center gap-5 md:gap-10">
-
-    <a href="register.html" class="flex items-center gap-2 text-primary text-lg md:text-2xl" style="text-decoration:none;">
-      <i class="fa-solid fa-user"></i> Register
-    </a>
-
-    <a href="login.html" class="flex items-center gap-2 text-primary text-lg md:text-2xl" style="text-decoration:none;">
-      <i class="fa-solid fa-circle-user"></i> Login
-    </a>
-
+  <div class="text-primary text-lg md:text-2xl mt-2 md:mt-0">
+    <i class="fa-solid fa-user"></i> <a href="register.html" style="text-decoration: none;">Register</a> &nbsp;
+    <i class="fa-solid fa-circle-user"></i> <a href="login.html" style="text-decoration: none;">Login</a>
   </div>
-
 </nav>
 
-
-<!-- HERO SECTION -->
-<section class="bg-blue-300" style="padding-top:40px; padding-bottom:40px;">
-  <div class="row mt-5 px-3 d-flex align-items-center" style="min-height:60vh;">
-
-    <!-- LEFT CONTENT -->
-    <div class="col-6 col-md-6 d-flex flex-column justify-center">
-      <p class="text-3xl md:text-6xl font-bold text-center text-primary">
-        Banking Made Simple
-      </p>
-
-      <p class="text-base md:text-xl font-bold mt-4 text-center">
-        Experience secure transactions, instant payments and access worldwide.
-      </p>
-
-      <button class="btn btn-primary p-2 md:p-3 mt-4 mx-auto d-block shadow">
-        Open an Account
-      </button>
+<!-- Hero Section -->
+<section class="bg-blue-300 pt-20 pb-10">
+  <div class="row mt-5 px-3 px-md-5">
+    <div class="col-12 col-md-6 mt-5 pt-5 text-center text-md-start">
+      <p class="text-3xl md:text-6xl font-bold mb-5 text-primary">Banking Made Simple</p>
+      <p class="text-md md:text-xl font-bold mt-4 mb-5 px-2 md:px-3">Experience next level online banking with secure transactions, instant payments and easy access anywhere in the world.</p>
+      <button class="btn btn-primary py-2 px-4 md:py-3 md:px-5 mb-5 shadow">Open an Account</button>
     </div>
-
-    <!-- RIGHT IMAGE -->
-    <div class="col-6 col-md-6 d-flex justify-center">
-      <img src="https://www.brainvire.com/wp/wp-content/uploads/2021/04/Blog_Digitization-of-the-Banking-Industry-v2.gif"
-           class="img-fluid w-100 h-auto">
+    <div class="col-12 col-md-6 text-center">
+      <img src="https://www.brainvire.com/wp/wp-content/uploads/2021/04/Blog_Digitization-of-the-Banking-Industry-v2.gif" class="img-fluid" alt="Banking GIF">
     </div>
-
   </div>
 </section>
 
-<!-- OUR SERVICES -->
-<section style="padding-top: 40px;">
-  <p class="text-3xl md:text-6xl font-bold text-primary text-center">Our Banking Services</p>
-
-  <div class="row justify-content-center my-5 px-3 gy-4">
-
-    <div class="col-6 col-md-3 shadow p-4 rounded-xl" data-aos="zoom-in">
-      <p class="text-xl md:text-3xl font-bold mb-3 text-center">Mobile Banking</p>
-      <p class="text-sm md:text-lg text-center">
-        Access your account, transfer funds and pay bills easily.
-      </p>
+<!-- Services Section -->
+<section class="pt-5 pb-10">
+  <p class="text-3xl md:text-6xl font-bold text-primary text-center mt-5">Our Banking Services</p>
+  <div class="row justify-content-center my-5 gy-5 gap-3 px-2 px-md-5">
+    <div class="col-12 col-md-3 shadow p-4 rounded-xl text-center" data-aos="zoom-in" data-aos-delay="0">
+      <p class="text-xl md:text-3xl font-bold mb-3">Mobile Banking</p>
+      <p>Access your account, transfer funds and pay bills with our secure mobile app.</p>
     </div>
-
-    <div class="col-6 col-md-3 shadow p-4 rounded-xl" data-aos="zoom-in">
-      <p class="text-xl md:text-3xl font-bold mb-3 text-center">Secure Transactions</p>
-      <p class="text-sm md:text-lg text-center">
-        Advanced encryption & fraud protection.
-      </p>
+    <div class="col-12 col-md-3 shadow p-4 rounded-xl text-center" data-aos="zoom-in" data-aos-delay="300">
+      <p class="text-xl md:text-3xl font-bold mb-3">Secure Transactions</p>
+      <p>Enjoy peace of mind with advanced encryption and fraud detection.</p>
     </div>
-
-    <div class="col-6 col-md-3 shadow p-4 rounded-xl" data-aos="zoom-in">
-      <p class="text-xl md:text-3xl font-bold mb-3 text-center">Flexible Payments</p>
-      <p class="text-sm md:text-lg text-center">
-        Multiple payment options tailored for you.
-      </p>
+    <div class="col-12 col-md-3 shadow p-4 rounded-xl text-center" data-aos="zoom-in" data-aos-delay="600">
+      <p class="text-xl md:text-3xl font-bold mb-3">Flexible Payments</p>
+      <p>Choose our multiple payment options tailored to your needs.</p>
     </div>
-
   </div>
 </section>
 
-<!-- WHY CHOOSE US -->
-<section class="mt-5 px-3">
-  <div class="row d-flex align-items-center">
-
-    <div class="col-6 col-md-6">
-      <img class="img-fluid w-100"
-           src="https://cdn3d.iconscout.com/3d/premium/thumb/hand-holding-money-bag-7940660-6294958.png">
+<!-- Why Choose Section -->
+<section class="pt-5 pb-10">
+  <div class="row mt-5 px-2 px-md-5 align-items-center">
+    <div class="col-12 col-md-6 text-center mb-5 mb-md-0">
+      <img src="https://cdn3d.iconscout.com/3d/premium/thumb/hand-holding-money-bag-7940660-6294958.png" class="img-fluid" alt="Banking GIF">
     </div>
-
-    <div class="col-6 col-md-6 mt-5 pt-5">
-      <p class="text-3xl md:text-6xl font-bold text-primary">Why Choose My Bank?</p>
-      <p class="text-lg md:text-2xl font-bold mt-4">
-        <i class="fa-solid fa-circle-check text-primary me-2"></i> 24/7 Support
-      </p>
-      <p class="text-lg md:text-2xl font-bold mt-4">
-        <i class="fa-solid fa-circle-check text-primary me-2"></i> Instant Transfers
-      </p>
-      <p class="text-lg md:text-2xl font-bold mt-4">
-        <i class="fa-solid fa-circle-check text-primary me-2"></i> Low Fees
-      </p>
+    <div class="col-12 col-md-6 mt-5 pt-5">
+      <p class="text-3xl md:text-6xl font-bold text-primary pb-4">Why Choose My Bank?</p>
+      <p class="text-lg md:text-2xl font-bold mt-4"><i class="fa-solid fa-circle-check text-primary me-3"></i>24/7 Customer Support</p>
+      <p class="text-lg md:text-2xl font-bold mt-4"><i class="fa-solid fa-circle-check text-primary me-3"></i>Instant Money Transfers</p>
+      <p class="text-lg md:text-2xl font-bold mt-4"><i class="fa-solid fa-circle-check text-primary me-3"></i>Low Transaction Fees</p>
+      <p class="text-lg md:text-2xl font-bold mt-4"><i class="fa-solid fa-circle-check text-primary me-3"></i>Trusted By Millions Worldwide</p>
     </div>
-
   </div>
 </section>
 
-
-<!-- REVIEWS -->
-<section class="mt-5 px-3">
-  <p class="text-3xl md:text-6xl font-bold text-primary text-center">What Our Customers Say</p>
-
-  <div class="row justify-content-center mt-5 gy-4 px-3">
-
-    <div class="col-6 col-md-3 shadow p-4 rounded-xl">
-      <p class="text-sm md:text-xl text-center">
-        <i>"Best online experience ever!"</i>
-      </p>
-      <p class="text-center font-bold mt-3">– John Doe</p>
+<!-- Testimonials Section -->
+<section class="pt-5 pb-10">
+  <p class="text-3xl md:text-6xl font-bold text-primary text-center mt-5">What Our Customers Say</p>
+  <div class="row justify-content-center my-5 gy-5 gap-3 px-2 px-md-5">
+    <div class="col-12 col-md-3 shadow p-4 rounded-xl text-center" data-aos="zoom-in" data-aos-delay="0">
+      <p class="text-md md:text-xl"><i>" Best Online experience ever ! The app is super easy to use. "</i></p>
+      <p class="text-center text-lg font-bold mt-3">- John Doe</p>
     </div>
-
-    <div class="col-6 col-md-3 shadow p-4 rounded-xl">
-      <p class="text-sm md:text-xl text-center">
-        <i>"Secure, fast and reliable."</i>
-      </p>
-      <p class="text-center font-bold mt-3">– Sarah Williams</p>
+    <div class="col-12 col-md-3 shadow p-4 rounded-xl text-center" data-aos="zoom-in" data-aos-delay="300">
+      <p class="text-md md:text-xl"><i>"Secure, fast and reliable. I recommend my bank to everyone."</i></p>
+      <p class="text-center text-lg font-bold mt-3">- Sarah Williams</p>
     </div>
-
-    <div class="col-6 col-md-3 shadow p-4 rounded-xl">
-      <p class="text-sm md:text-xl text-center">
-        <i>"Customer support is amazing."</i>
-      </p>
-      <p class="text-center font-bold mt-3">– Michael Smith</p>
+    <div class="col-12 col-md-3 shadow p-4 rounded-xl text-center" data-aos="zoom-in" data-aos-delay="600">
+      <p class="text-md md:text-xl"><i>" Customer Support is excellent. They resolved my issue in minutes. "</i></p>
+      <p class="text-center text-lg font-bold mt-3">- Michael Smith</p>
     </div>
-
   </div>
 </section>
 
-<!-- CTA -->
-<section class="bg-blue-400 flex justify-center items-center p-5 mt-5">
-  <div class="text-center px-5 py-4 bg-indigo-200 shadow rounded-xl">
-    <p class="text-3xl md:text-6xl font-bold text-white">
-      Ready For Modern Banking?
-    </p>
-    <p class="text-xl md:text-2xl text-white mt-3">
-      Open your account today!
-    </p>
-    <button class="btn btn-light text-primary shadow px-4 py-3 mt-3">
-      Join Now
-    </button>
+<!-- CTA Section -->
+<section class="bg-blue-400 py-10 flex justify-center items-center">
+  <div class="text-center px-3 md:px-5 py-4 md:py-5 bg-indigo-200 shadow rounded-xl">
+    <p class="text-3xl md:text-6xl font-bold mb-4 text-white">Ready To Experience Modern Banking ?</p>
+    <p class="text-md md:text-2xl font-semibold mb-4 text-white px-2 md:px-0">Open your account today and enjoy seamless transactions with My Bank</p>
+    <button class="btn btn-light text-primary shadow py-2 px-4 md:py-3 md:px-5 text-md md:text-xl">Join Now</button>
   </div>
 </section>
- <footer class="bg-white py-12">
+    <!-- Main Footer -->
+    <footer class="bg-white py-12">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <!-- MY BANK Section -->
@@ -241,3 +173,9 @@
     </footer>
 </body>
 </html>
+
+<script>
+  AOS.init();
+</script>
+</body>
+</html> 
