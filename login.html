@@ -15,35 +15,39 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
      </head>
-<body style="background-color:  #004080 ;">
-    <div class="w-50 mx-auto mt-5 p-4 border bg-white shadow mt-5 rounded-xl">
- <img src="https://th.bing.com/th/id/OIP.GBy2hZeUZEJJbrJL8TE_ZQHaF7?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" width="150" height="150" 
-          style="display:block; margin:auto;margin-top: 30px;">
-        <h1 class="mb-2 mt-2 fw-bolder text-center text-primary">My Bank</h1>
-        <p class="text-gray-500 font-semibold text-center text-xl  mt-4 mb-5">Access your Account Securely</p>
-<form class="max-w-lg mx-auto ">
-  <div class="mb-5">
-    
-    <input type="text" id="acc" class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder:text-2xl placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Account Number" required />
-  </div>
-  <div class="mb-5">
-    <input type="password" id="pass" class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark: placeholder:text-2xl placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Password" required />
-  </div>
-  <div class="flex items-start mb-5">
-    <div class="flex items-center h-5">
-      <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
-    </div>
-    <label for="remember" class="ms-2 text-xl font-medium text-gray-900 dark:text-gray-300">Remember me</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Forgot Password ?</a>
-  </div>
-<button type="button" class="bg-blue-900 hover:bg-blue-800 text-white mt-4 mb-5 w-100 p-3 font-bold shadow" onclick="login()"> Login</button>
-<hr class="border-gray-300 my-4">
-
-    <!-- Text below horizontal line -->
-    <p class="text-center text-gray-700 text-xl">Don't have an account? &nbsp; <a href="#" class="text-blue-700 font-bold">  Register</a></p>
-</form>
-
+<body style="background-color: #004080;">
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="shadow bg-white rounded-xl p-4" style="width: 50%; max-width: 90%;">
+            <img src="https://th.bing.com/th/id/OIP.GBy2hZeUZEJJbrJL8TE_ZQHaF7?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                 width="150" height="150" class="img-fluid mx-auto d-block mb-3" style="margin-top: 30px;">
+            
+            <h1 class="mb-2 mt-2 fw-bolder text-center text-primary">My Bank</h1>
+            <p class="text-secondary font-semibold text-center text-xl mb-5">Access your Account Securely</p>
+            
+            <form class="mx-auto" style="max-width: 350px;">
+                <div class="mb-4">
+                    <input type="text" id="acc" class="form-control form-control-lg rounded" placeholder="Account Number" required>
+                </div>
+                <div class="mb-4">
+                    <input type="password" id="pass" class="form-control form-control-lg rounded" placeholder="Password" required>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="remember">
+                        <label class="form-check-label" for="remember">
+                            Remember me
+                        </label>
+                    </div>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="button" class="btn btn-primary w-100 mb-3" onclick="login()">Login</button>
+                
+                <hr class="my-3">
+                <p class="text-center">Don't have an account? &nbsp; 
+                    <a href="register.html" class="text-primary font-bold">Register</a>
+                </p>
+            </form>
+        </div>
     </div>
 
  <script>
