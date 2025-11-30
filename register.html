@@ -15,38 +15,37 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-<body style="background-color:  #004080; overflow-x: auto;">
-    <div class="d-flex justify-content-center align-items-center vh-100" style="min-width: 320px;">
-        <div class="text-center shadow mx-auto w-50 bg-white rounded-xl p-4">
-            <img src="https://th.bing.com/th/id/OIP.GBy2hZeUZEJJbrJL8TE_ZQHaF7?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" width="150" height="150" style="display:block; margin:auto;margin-top: 30px;">
+<body style="background-color: #004080;">
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="text-center shadow mx-auto bg-white rounded-3 p-4" style="max-width: 500px; width: 100%;">
+            <img src="https://th.bing.com/th/id/OIP.GBy2hZeUZEJJbrJL8TE_ZQHaF7?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                 width="150" height="150" class="img-fluid mx-auto d-block mb-3" style="margin-top: 30px;">
             
             <h1 class="mb-2 mt-2 fw-bolder text-primary">My Bank</h1>
-            <p class="text-gray-500 font-semibold text-xl mb-5">Create your account to get started</p>
+            <p class="text-secondary font-semibold text-xl mb-5">Create your account to get started</p>
             
-            <!-- Username -->
-            <div class="input-group mb-3 w-50 mx-auto">
+            <div class="input-group mb-3 w-100" style="max-width: 350px; margin: auto;">
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
                 <input type="text" class="form-control form-control-lg rounded" id="uname" placeholder="Username" required>
             </div>
-            
-            <!-- Account Number -->
-            <div class="input-group mb-3 w-50 mx-auto">
+        
+            <div class="input-group mb-3 w-100" style="max-width: 350px; margin: auto;">
                 <span class="input-group-text"><i class="fas fa-id-card"></i></span>
                 <input type="text" class="form-control form-control-lg rounded" id="acc" placeholder="Account Number" required>
             </div>
             
-            <!-- Password -->
-            <div class="input-group mb-3 w-50 mx-auto">
+            
+            <div class="input-group mb-3 w-100" style="max-width: 350px; margin: auto;">
                 <span class="input-group-text"><i class="fas fa-lock"></i></span>
                 <input type="password" class="form-control form-control-lg rounded" id="pass" placeholder="Password" required>
             </div>
             
-            <!-- Register Button -->
-            <button class="bg-blue-900 hover:bg-blue-800 text-white mt-4 mb-5 w-50 p-3 font-bold rounded-lg shadow" onclick="register()"> 
+            
+            <button class="btn text-white mt-4 mb-5 w-100" style="background-color:#004080; max-width: 350px; display: block; margin:auto;" onclick="register()"> 
                 Register 
             </button>
             
-            <p class="text-gray-800 font-semibold text-xl mb-5">Already have an account? 
+            <p class="text-secondary font-semibold text-xl mb-0">Already have an account? 
                 <a href="login.html">Sign In</a> 
             </p>
         </div>
