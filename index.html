@@ -25,41 +25,48 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="sticky bg-blue-100 shadow px-3 py-2 flex justify-between items-center mr-3 ml-3 rounded-xl z-50">
-
+<nav class="sticky bg-blue-100 shadow px-3 py-2 flex justify-between items-center mr-3 ml-3 rounded-xl z-50 whitespace-nowrap overflow-hidden">
       
-  <span class="flex items-center text-3xl md:text-4xl text-primary font-bold p-3">
-    <img src="https://img.freepik.com/premium-psd/bank-icon-transparent-background_1046662-28747.jpg" class="h-10 w-10 md:h-12 md:w-12 mr-2"> &nbsp; My Bank
+  <span class="flex items-center text-2xl md:text-4xl text-primary font-bold p-3 shrink">
+    <img src="https://img.freepik.com/premium-psd/bank-icon-transparent-background_1046662-28747.jpg" 
+         class="h-10 w-10 md:h-12 md:w-12 mr-2"> 
+    My Bank
   </span>
 
-  <h4 class="text-primary text-xl md:text-2xl mt-2 md:mt-0">
+  <h4 class="text-primary text-lg md:text-2xl flex gap-3 items-center shrink">
     <i class="fa-solid fa-user"></i> 
-    <a href="register.html" style="text-decoration: none;">Register</a> &nbsp; &nbsp;
+    <a href="register.html" style="text-decoration: none;">Register</a>
+
     <i class="fa-solid fa-circle-user"></i>
     <a href="login.html" style="text-decoration: none;">Login</a>
   </h4>
 
 </nav>
 
-<!-- HERO SECTION -->
-<section class="bg-blue-300" style="padding-top:40px;">
-  <div class="row mt-5 px-3 d-flex align-items-center">
 
-    <div class="col-6 col-md-6 mt-5 pt-5">
-      <p class="text-3xl md:text-6xl font-bold text-primary text-center">
+<!-- HERO SECTION -->
+<section class="bg-blue-300" style="padding-top:40px; padding-bottom:40px;">
+  <div class="row mt-5 px-3 d-flex align-items-center" style="min-height:60vh;">
+
+    <!-- LEFT CONTENT -->
+    <div class="col-6 col-md-6 d-flex flex-column justify-center">
+      <p class="text-3xl md:text-6xl font-bold text-center text-primary">
         Banking Made Simple
       </p>
+
       <p class="text-base md:text-xl font-bold mt-4 text-center">
-        Experience secure transactions anytime.
+        Experience secure transactions, instant payments and access worldwide.
       </p>
-      <button class="btn btn-primary mx-auto d-block p-2 md:p-3 mt-3">
+
+      <button class="btn btn-primary p-2 md:p-3 mt-4 mx-auto d-block shadow">
         Open an Account
       </button>
     </div>
 
-    <div class="col-6 col-md-6 d-flex justify-content-center">
-      <img class="img-fluid w-100" 
-           src="https://www.brainvire.com/wp/wp-content/uploads/2021/04/Blog_Digitization-of-the-Banking-Industry-v2.gif">
+    <!-- RIGHT IMAGE -->
+    <div class="col-6 col-md-6 d-flex justify-center">
+      <img src="https://www.brainvire.com/wp/wp-content/uploads/2021/04/Blog_Digitization-of-the-Banking-Industry-v2.gif"
+           class="img-fluid w-100 h-auto">
     </div>
 
   </div>
